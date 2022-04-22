@@ -1,0 +1,17 @@
+@use '/styles/base/variables' as *;
+
+.btn {
+  background-color: transparent;
+  border: 2px solid black;
+  padding: .5rem 1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+
+  cursor: pointer;
+
+  color: $primary100;
+
+  &:hover {
+    background-color: black;
+  }
+}

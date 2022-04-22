@@ -1,0 +1,48 @@
+@use '/styles/base/variables' as *;
+@use '/styles/base/mixins' as *;
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1.25rem 1.5rem;
+
+  &__ham {
+
+    display: flex;
+    cursor: pointer;
+
+    @include mq('tablet') {
+      display: none;
+    }
+  }
+
+  &__wide {
+    display: none;
+    @include mq('tablet') {
+      display: block;
+    }
+  }
+
+  &__wide__links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    gap: 2rem;
+
+    li {
+
+      a {
+        text-decoration: none;
+        color: $primary200;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+}

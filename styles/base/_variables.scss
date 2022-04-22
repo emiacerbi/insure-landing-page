@@ -1,0 +1,22 @@
+// Variables
+
+$primary100: hsl(256, 26%, 20%);
+$primary200: hsl(216, 30%, 68%);
+
+$neutral100: hsl(270, 9%, 17%);
+$neutral200: hsl(273, 4%, 51%);
+$neutral300: hsl(0, 0%, 98%);
+
+$font-headings: 'DM Serif Display', serif;
+$font-body: 'Karla', sans-serif;
+
+$breakpoints: (
+    "phone":        400px,
+    "phone-wide":   480px,
+    "phablet":      560px,
+    "tablet-small": 640px,
+    "tablet":       768px,
+    "tablet-wide":  1024px,
+    "desktop":      1248px,
+    "desktop-wide": 1440px
+);
