@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import React from 'react'
 
-import logo from '../../public/assets/logo.svg'
-import hamIcon from '../../public/assets/icon-hamburger.svg'
+import logo from '../public/assets/logo.svg'
+import hamIcon from '../public/assets/icon-hamburger.svg'
 
 export const Navbar = () => {
   return (

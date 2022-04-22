@@ -1,4 +1,4 @@
-import { InsureApp } from './InsureApp'
+import { InsureApp } from "../components/InsureApp";
 
 export default function Home() {
   return (
