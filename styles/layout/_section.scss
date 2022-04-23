@@ -3,9 +3,7 @@
 
 .section {
   padding: 10rem 1.2rem;
-
   text-align: center;
-
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -38,7 +36,6 @@
       @include mq('desktop') {
         top: -25px; left: 75px;
       }
-
     }
 
     @include mq('desktop') {
@@ -46,7 +43,6 @@
       align-self: flex-start;
       grid-column: span 3;
     }
-
   }
 
   &__card {
