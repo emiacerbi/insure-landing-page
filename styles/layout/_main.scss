@@ -3,12 +3,7 @@
 
 .main {
   background-color: $primary100;
-  position: relative;
-
-  
-  background-image: url(../../public/assets/bg-pattern-intro-left-mobile.svg);
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  color: $neutral300;
 
   @include mq('phablet') {
 
@@ -17,12 +12,11 @@
     justify-content: center;
   }
 
-
-
   &__image {
 
+    display: flex;
+
     &__desktop {
-      min-height: 400px;
       object-fit: cover;
     }
 
@@ -40,16 +34,21 @@
 
   &__container {
     
-    color: $neutral300;
-    padding: 4rem 1.5rem;
+    padding: 4rem 1.25rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 2rem;
+
     max-width: 600px;
+    min-height: 500px;
     
     text-align: center;
+
+    background-image: url(../../public/assets/bg-pattern-intro-left-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
 
     @include mq('phablet') {
       align-items: flex-start;
@@ -57,11 +56,11 @@
       text-align: left;
       order: -1;
       padding: 4rem 3rem;
-      margin-top: 3rem;
+      padding-top: 5rem;
     }
 
     @include mq('desktop') {
-      margin-top: 5rem;
+      padding-top: 8rem;
     }
 
     &__header {

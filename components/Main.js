@@ -21,6 +21,5 @@ export const Main = () => {
 
     </main>
 
-// className='main__image__mobile'
   )
 }
