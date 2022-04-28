@@ -4,11 +4,33 @@
 .main {
   background-color: $primary100;
   color: $neutral300;
+  position: relative;
+
+  @include mq('desktop') {
+
+    &::before {
+      @include pseudo;
+      content: url(../../public/assets/bg-pattern-intro-right-desktop.svg);
+      top: 0px; right: 0px;
+      width: auto;  height: auto;
+      z-index: 2;
+    }
+
+    &::after {
+      @include pseudo;
+      content: url(../../public/assets/bg-pattern-intro-left-desktop.svg);
+      top: 400px; left: 0px;
+      width: auto;  height: auto;
+      z-index: 2;
+    }
+  }
+  
   
   
   &__wrapper {
     
     max-width: 1100px;
+    // z-index: -2;
 
     @include mq('phablet') {
       
@@ -21,6 +43,7 @@
     &__image {
   
       display: flex;
+      z-index: 0;
   
       &__desktop {
         object-fit: cover;
@@ -56,9 +79,15 @@
       background-image: url(../../public/assets/bg-pattern-intro-left-mobile.svg);
       background-repeat: no-repeat;
       background-position: 0 0;
-      
 
-  
+      &::before {
+        @include pseudo;
+        content: url(../../public/assets/bg-pattern-intro-right-mobile.svg);
+        bottom: 0px; right: 0px;
+        width: auto;  height: auto;
+        z-index: 3;
+      }
+      
       @include mq('phablet') {
         align-items: flex-start;
         justify-content: start;
@@ -85,7 +114,6 @@
       @include mq('desktop') {
         padding: 0;
         padding-top: 10rem;
-
       }
   
       &__header {
@@ -98,7 +126,6 @@
       &__text {
         max-width: 57ch;
       }
-  
     }
   }
 
