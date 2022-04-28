@@ -10,6 +10,10 @@
   max-width: 1100px;
   margin: 0 auto;
 
+  @include mq('desktop') {
+    padding: 1.25rem 0;
+  }
+
   &__ham {
 
     display: flex;

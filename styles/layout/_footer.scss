@@ -1,0 +1,77 @@
+@use '/styles/base/variables' as *;
+
+.footer {
+
+  margin-top: 8rem;
+  background-color: $neutral300;
+  
+  &__social {
+    background: url('../../public/assets/bg-pattern-footer-mobile.svg');
+    padding: 4rem 2rem 2.25rem;
+    // padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    .flex {
+      display: flex;
+      gap: 1rem;
+    }
+
+    &__logo {
+      display: block;
+      cursor: pointer;
+      transition: .2s ease;
+
+      &:hover {
+        opacity: .8;
+      }
+    }
+
+  }
+
+  &__contact {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-top: 1px solid lightgray;
+    margin: 0 1rem;
+    padding: 2rem 0;
+    
+
+    &__links {
+
+      display: flex;
+      flex-direction: column;
+      gap: .5rem;
+      margin-bottom: 2rem;
+
+      
+
+      &__title {
+        color: $neutral200;
+        font-weight: 600;
+        font-size: .9rem;
+        margin-bottom: 1rem;
+      }
+      
+      &__link {
+        display: block;
+        color: $primary100;
+        font-weight: 600;
+        font-size: .8rem;
+        cursor: pointer;
+        max-width: fit-content;
+        margin: 0 auto;
+
+        &:hover {
+          text-decoration: underline;
+          text-underline-offset: 1px;
+
+        }
+      }
+    }
+  }
+
+}
