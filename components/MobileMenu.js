@@ -1,12 +1,16 @@
-import React, {useState} from 'react'
+import React, {useEffect} from 'react'
 
 export const MobileMenu = ({isMobileMenuOpen}) => {
 
   const test = isMobileMenuOpen ? 'animate__fadeInDown' : 'animate__fadeOutUp'
 
-  isMobileMenuOpen ? 
-    document.body.style.overflow = "hidden" : 
-    document.body.style.overflow = "visible"
+  useEffect(() => {
+    isMobileMenuOpen ? 
+      document.body.style.overflow = "hidden" : 
+      document.body.style.overflow = "visible"
+  
+  }, [isMobileMenuOpen])
+  
 
 
   return (
