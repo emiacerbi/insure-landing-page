@@ -4,6 +4,11 @@ export const MobileMenu = ({isMobileMenuOpen}) => {
 
   const test = isMobileMenuOpen ? 'animate__fadeInDown' : 'animate__fadeOutUp'
 
+  isMobileMenuOpen ? 
+    document.body.style.overflow = "hidden" : 
+    document.body.style.overflow = "visible"
+
+
   return (
     <>
       <nav className={`mobile-menu animate__animated ${test}`} >
